@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Custom Cakes | Sweet Moments</title>
+
+      <link
+        rel="icon"
+        type="image/png"
+        href="c:\Website\photoes\cake-slice.png"
+    >
+
+
+
+
+    <meta
+        name="description"
+        content="Design and request a personalised cake from Sweet Moments."
+    >
+
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<script src="../JavaScript/script.js"></script>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">Sweet Moments</a>
+        </div>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="cakes.html">Cakes</a></li>
+                <li><a href="pastries.html">Pastries</a></li>
+                <li><a href="custom-cakes.html" aria-current="page">Custom Cakes</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="booking.html" aria-current="page">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Page Introduction -->
+        <section class="custom-intro">
+            <p>Made Especially For You</p>
+
+            <h1>Design Your Dream Cake</h1>
+
+            <p>
+                Tell us about your celebration and the cake you have
+                in mind. We will contact you to confirm the design,
+                availability and final price.
+            </p>
+        </section>
+
+
+        <!-- Custom Cake Form -->
+        <section class="custom-order-section">
+
+            <form
+                class="custom-order-form"
+                action="#"
+                method="post"
+                enctype="multipart/form-data"
+            >
+
+                <!-- Occasion -->
+                <fieldset>
+                    <legend>About Your Occasion</legend>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="occasion">
+                                What is the occasion?
+                            </label>
+
+                            <select
+                                id="occasion"
+                                name="occasion"
+                                required
+                            >
+                                <option value="">Please select</option>
+                                <option value="birthday">Birthday</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="anniversary">
+                                    Anniversary
+                                </option>
+                                <option value="baby-shower">
+                                    Baby Shower
+                                </option>
+                                <option value="engagement">
+                                    Engagement
+                                </option>
+                                <option value="graduation">
+                                    Graduation
+                                </option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="date-needed">
+                                Date needed
+                            </label>
+
+                            <input
+                                type="date"
+                                id="date-needed"
+                                name="date_needed"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="weight">
+                                Approximate cake weight
+                            </label>
+
+                            <select
+                                id="weight"
+                                name="weight"
+                                required
+                            >
+                                <option value="">Please select</option>
+                                <option value="1kg">1 kg</option>
+                                <option value="1.5kg">1.5 kg</option>
+                                <option value="2kg">2 kg</option>
+                                <option value="2.5kg">2.5 kg</option>
+                                <option value="3kg">3 kg</option>
+                                <option value="over-3kg">
+                                    More than 3 kg
+                                </option>
+                                <option value="unsure">
+                                    Not sure
+                                </option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="servings">
+                                Number of servings
+                            </label>
+
+                            <input
+                                type="number"
+                                id="servings"
+                                name="servings"
+                                min="4"
+                                placeholder="For example, 20"
+                            >
+                        </div>
+
+                    </div>
+                </fieldset>
+
+
+                <!-- Flavour and Filling -->
+                <fieldset>
+                    <legend>Flavour And Filling</legend>
+
+                    <div class="form-group">
+                        <span class="group-label">
+                            Choose the cake covering
+                        </span>
+
+                        <div class="choice-row">
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="covering"
+                                    value="buttercream"
+                                    required
+                                >
+                                Buttercream
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="covering"
+                                    value="fresh-cream"
+                                >
+                                Fresh cream
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="covering"
+                                    value="unsure"
+                                >
+                                Help me choose
+                            </label>
+
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="sponge-flavour">
+                            Sponge flavour
+                        </label>
+
+                        <select
+                            id="sponge-flavour"
+                            name="sponge_flavour"
+                            required
+                        >
+                            <option value="">Please select</option>
+                            <option value="vanilla">Vanilla</option>
+                            <option value="chocolate">Chocolate</option>
+                            <option value="red-velvet">Red Velvet</option>
+                            <option value="pistachio">Pistachio</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <span class="group-label">
+                            What would you like inside?
+                        </span>
+
+                        <p class="field-hint">
+                            Select as many as you like.
+                        </p>
+
+                        <div class="choice-row">
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="fillings[]"
+                                    value="chocolate-chips"
+                                >
+                                Chocolate chips
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="fillings[]"
+                                    value="banana"
+                                >
+                                Banana
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="fillings[]"
+                                    value="walnuts"
+                                >
+                                Walnuts
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="fillings[]"
+                                    value="strawberry"
+                                >
+                                Strawberry
+                            </label>
+
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="allergies">
+                            Allergies or dietary requirements
+                        </label>
+
+                        <textarea
+                            id="allergies"
+                            name="allergies"
+                            rows="3"
+                            placeholder="Please tell us about any nut, dairy, gluten or other allergies. Write None if there are no known allergies."
+                            required
+                        ></textarea>
+                    </div>
+                </fieldset>
+
+
+                <!-- Cake Design -->
+                <fieldset>
+                    <legend>Your Cake Design</legend>
+
+                    <div class="form-group">
+                        <label for="reference-image">
+                            Upload a reference picture
+                        </label>
+
+                        <input
+                            type="file"
+                            id="reference-image"
+                            name="reference_image"
+                            accept="image/jpeg, image/png, image/webp"
+                        >
+
+                        <p class="field-hint">
+                            Upload a JPG, PNG or WebP image. Your cake
+                            will be inspired by the picture but may not
+                            be an exact copy.
+                        </p>
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="colour-theme">
+                                Colours or theme
+                            </label>
+
+                            <input
+                                type="text"
+                                id="colour-theme"
+                                name="colour_theme"
+                                placeholder="For example, pink and gold"
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="budget">
+                                Approximate budget
+                            </label>
+
+                            <input
+                                type="text"
+                                id="budget"
+                                name="budget"
+                                inputmode="decimal"
+                                placeholder="For example, £60–£80"
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="design-details">
+                            Design details and cake message
+                        </label>
+
+                        <textarea
+                            id="design-details"
+                            name="design_details"
+                            rows="5"
+                            placeholder="Describe the style, decorations and wording you would like on the cake."
+                        ></textarea>
+                    </div>
+                </fieldset>
+
+
+                <!-- Contact Details -->
+                <fieldset>
+                    <legend>Your Contact Details</legend>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="customer-name">
+                                Full name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="customer-name"
+                                name="customer_name"
+                                autocomplete="name"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="phone">
+                                Phone number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                autocomplete="tel"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="form-group form-group-wide">
+                            <label for="email">
+                                Email address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+
+                    </div>
+                </fieldset>
+
+
+                <label class="agreement">
+                    <input
+                        type="checkbox"
+                        name="agreement"
+                        required
+                    >
+
+                    <span>
+                        I understand that this form is an enquiry.
+                        My order is confirmed only after Sweet Moments
+                        approves the design, price and collection date.
+                    </span>
+                </label>
+
+
+                <button type="submit">
+                    Request A Cake Quote
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <h2>Sweet Moments</h2>
+
+                <p>
+                    Handmade cakes, pastries and desserts
+                    made with love.
+                </p>
+            </div>
+
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cakes.html">Cakes</a></li>
+                    <li><a href="pastries.html">Pastries</a></li>
+                    <li><a href="custom-cakes.html">Custom Cakes</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+
+                <p>Newcastle, England</p>
+                <p>Phone: 07XXX XXX XXX</p>
+                <p>Email: hello@sweetmoments.co.uk</p>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>
+                &copy; 2026 Sweet Moments.
+                All rights reserved.
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

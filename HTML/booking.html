@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Booking | Sweet Moments</title>
+
+    <meta
+        name="description"
+        content="Book a table at Sweet Moments cafe in Newcastle."
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="../photoes/favicon.png"
+    >
+
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            <a href="index.html">Sweet Moments</a>
+        </div>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li>
+                    <a href="Home.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="cakes.html">Cakes</a>
+                </li>
+
+                <li>
+                    <a href="pastries.html">Pastries</a>
+                </li>
+
+                <li>
+                    <a href="custom-cakes.html">
+                        Custom Cakes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+
+                <li>
+                    <a
+                        href="booking.html"
+                        aria-current="page"
+                    >
+                        Booking
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Booking Introduction -->
+        <section class="booking-intro">
+
+            <p>Visit Sweet Moments</p>
+
+            <h1>Book Your Table</h1>
+
+            <p>
+                Whether you are meeting friends, celebrating a
+                special occasion or simply enjoying something
+                sweet, reserve your table with us.
+            </p>
+
+        </section>
+
+
+        <!-- Booking Section -->
+        <section class="booking-section">
+
+            <!-- Cafe Information -->
+            <aside class="booking-information">
+
+                <p class="booking-small-heading">
+                    Plan Your Visit
+                </p>
+
+                <h2>A Sweet Place To Relax</h2>
+
+                <p>
+                    Complete the booking form and we will contact
+                    you to confirm your reservation.
+                </p>
+
+
+                <div class="booking-detail">
+
+                    <h3>Location</h3>
+
+                    <p>Newcastle, England</p>
+
+                </div>
+
+
+                <div class="booking-detail">
+
+                    <h3>Opening Hours</h3>
+
+                    <p>
+                        Monday – Friday<br>
+                        9:00 AM – 6:00 PM
+                    </p>
+
+                    <p>
+                        Saturday – Sunday<br>
+                        10:00 AM – 7:00 PM
+                    </p>
+
+                </div>
+
+
+                <div class="booking-detail">
+
+                    <h3>Contact</h3>
+
+                    <p>07XXX XXX XXX</p>
+
+                    <p>hello@sweetmoments.co.uk</p>
+
+                </div>
+
+            </aside>
+
+
+            <!-- Booking Form -->
+            <form
+                class="booking-form"
+                action="#"
+                method="post"
+            >
+
+                <h2>Reservation Details</h2>
+
+                <p class="booking-form-intro">
+                    Fields marked with * are required.
+                </p>
+
+
+                <div class="booking-form-grid">
+
+                    <!-- Full Name -->
+                    <div class="booking-form-group">
+
+                        <label for="booking-name">
+                            Full name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="booking-name"
+                            name="customer_name"
+                            autocomplete="name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Phone -->
+                    <div class="booking-form-group">
+
+                        <label for="booking-phone">
+                            Phone *
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="booking-phone"
+                            name="phone"
+                            autocomplete="tel"
+                            inputmode="tel"
+                            placeholder="07123 456789"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="booking-form-group">
+
+                        <label for="booking-email">
+                            Email *
+                        </label>
+
+                        <input
+                            type="email"
+                            id="booking-email"
+                            name="email"
+                            autocomplete="email"
+                            placeholder="name@example.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Booking Date -->
+                    <div class="booking-form-group">
+
+                        <label for="booking-date">
+                            Booking date *
+                        </label>
+
+                        <input
+                            type="date"
+                            id="booking-date"
+                            name="booking_date"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Preferred Time -->
+                    <div class="booking-form-group">
+
+                        <label for="booking-time">
+                            Preferred time *
+                        </label>
+
+                        <select
+                            id="booking-time"
+                            name="booking_time"
+                            required
+                        >
+                            <option value="">
+                                Select a time
+                            </option>
+
+                            <option value="09:00">9:00 AM</option>
+                            <option value="09:30">9:30 AM</option>
+                            <option value="10:00">10:00 AM</option>
+                            <option value="10:30">10:30 AM</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="11:30">11:30 AM</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="12:30">12:30 PM</option>
+                            <option value="13:00">1:00 PM</option>
+                            <option value="13:30">1:30 PM</option>
+                            <option value="14:00">2:00 PM</option>
+                            <option value="14:30">2:30 PM</option>
+                            <option value="15:00">3:00 PM</option>
+                            <option value="15:30">3:30 PM</option>
+                            <option value="16:00">4:00 PM</option>
+                            <option value="16:30">4:30 PM</option>
+                            <option value="17:00">5:00 PM</option>
+                            <option value="17:30">5:30 PM</option>
+                        </select>
+
+                    </div>
+
+
+                    <!-- Number of Guests -->
+                    <div class="booking-form-group">
+
+                        <label for="number-of-guests">
+                            Number of guests *
+                        </label>
+
+                        <select
+                            id="number-of-guests"
+                            name="number_of_guests"
+                            required
+                        >
+                            <option value="">
+                                Select number
+                            </option>
+
+                            <option value="1">1 guest</option>
+                            <option value="2">2 guests</option>
+                            <option value="3">3 guests</option>
+                            <option value="4">4 guests</option>
+                            <option value="5">5 guests</option>
+                            <option value="6">6 guests</option>
+                            <option value="7">7 guests</option>
+                            <option value="8">8 guests</option>
+
+                            <option value="more-than-8">
+                                More than 8 guests
+                            </option>
+                        </select>
+
+                    </div>
+
+
+                    <!-- Seating -->
+                    <div class="booking-form-group">
+
+                        <label for="seating">
+                            Seating preference
+                        </label>
+
+                        <select
+                            id="seating"
+                            name="seating_preference"
+                        >
+                            <option value="">
+                                No preference
+                            </option>
+
+                            <option value="indoor">
+                                Indoor
+                            </option>
+
+                            <option value="outdoor">
+                                Outdoor
+                            </option>
+
+                            <option value="window">
+                                Near a window
+                            </option>
+                        </select>
+
+                    </div>
+
+
+                    <!-- Occasion -->
+                    <div class="booking-form-group">
+
+                        <label for="booking-occasion">
+                            Occasion
+                        </label>
+
+                        <select
+                            id="booking-occasion"
+                            name="occasion"
+                        >
+                            <option value="">
+                                No special occasion
+                            </option>
+
+                            <option value="birthday">
+                                Birthday
+                            </option>
+
+                            <option value="anniversary">
+                                Anniversary
+                            </option>
+
+                            <option value="baby-shower">
+                                Baby shower
+                            </option>
+
+                            <option value="engagement">
+                                Engagement
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+                        </select>
+
+                    </div>
+
+
+                    <!-- Allergies -->
+                    <div
+                        class="booking-form-group booking-full-width"
+                    >
+
+                        <label for="dietary-requirements">
+                            Allergies or dietary requirements
+                        </label>
+
+                        <textarea
+                            id="dietary-requirements"
+                            name="dietary_requirements"
+                            rows="2"
+                            placeholder="Tell us about any allergies or dietary requirements."
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- Additional Requests -->
+                    <div
+                        class="booking-form-group booking-full-width"
+                    >
+
+                        <label for="booking-notes">
+                            Additional requests
+                        </label>
+
+                        <textarea
+                            id="booking-notes"
+                            name="additional_requests"
+                            rows="4"
+                            placeholder="High chair, wheelchair access, celebration details or other requests."
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Agreement -->
+                <label class="booking-agreement">
+
+                    <input
+                        type="checkbox"
+                        name="booking_agreement"
+                        required
+                    >
+
+                    <span>
+                        I understand that this is a booking request.
+                        My reservation is confirmed only after
+                        Sweet Moments contacts me.
+                    </span>
+
+                </label>
+
+
+                <button type="submit">
+                    Request A Booking
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Group Booking -->
+        <section class="group-booking">
+
+            <p>Planning Something Special?</p>
+
+            <h2>Large Groups And Celebrations</h2>
+
+            <p>
+                For groups of more than eight people, private
+                celebrations or afternoon tea events, please
+                contact us directly.
+            </p>
+
+            <a href="contact.html">
+                Contact Us
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <h2>Sweet Moments</h2>
+
+                <p>
+                    Handmade cakes, pastries and desserts
+                    made with love.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="cakes.html">Cakes</a>
+                    </li>
+
+                    <li>
+                        <a href="pastries.html">Pastries</a>
+                    </li>
+
+                    <li>
+                        <a href="custom-cakes.html">
+                            Custom Cakes
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="booking.html">Booking</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>Contact Us</h3>
+
+                <p>Newcastle, England</p>
+
+                <p>Phone: 07XXX XXX XXX</p>
+
+                <p>Email: hello@sweetmoments.co.uk</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Sweet Moments.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../JavaScript/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Pastries Coming Soon | Sweet Moments</title>
+
+    <meta
+        name="description"
+        content="Our Sweet Moments pastry collection is currently being prepared and will be available soon."
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="../photoes/favicon.png"
+    >
+
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <div class="logo">
+            <a href="index.html">Sweet Moments</a>
+        </div>
+
+
+        <nav aria-label="Main navigation">
+
+            <ul>
+
+                <li>
+                    <a href="Home.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="cakes.html">Cakes</a>
+                </li>
+
+                <li>
+                    <a
+                        href="pastries.html"
+                        aria-current="page"
+                    >
+                        Pastries
+                    </a>
+                </li>
+
+                <li>
+                    <a href="custom-cakes.html">
+                        Custom Cakes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+
+                <li>
+                    <a href="booking.html">Booking</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main>
+
+        <section class="pastry-coming-soon">
+
+            <!-- Decorative Pastries -->
+            <div
+                class="floating-pastry pastry-one"
+                aria-hidden="true"
+            >
+                🥐
+            </div>
+
+            <div
+                class="floating-pastry pastry-two"
+                aria-hidden="true"
+            >
+                🧁
+            </div>
+
+            <div
+                class="floating-pastry pastry-three"
+                aria-hidden="true"
+            >
+                🍪
+            </div>
+
+
+            <!-- Main Message -->
+            <div class="pastry-coming-content">
+
+                <p class="pastry-label">
+                    Something Delicious Is Baking
+                </p>
+
+                <h1>
+                    Our Pastry Collection
+                    Is Coming Soon
+                </h1>
+
+                <p class="pastry-description">
+                    We are currently preparing our pastry designs,
+                    flavours and menu. The collection is not ready
+                    just yet, but something sweet is on the way.
+                </p>
+
+
+                <!-- Animated Status -->
+                <div
+                    class="pastry-status"
+                    aria-live="polite"
+                >
+
+                    <div class="status-heading">
+
+                        <span>Kitchen progress</span>
+
+                        <strong id="pastry-percentage">
+                            75%
+                        </strong>
+
+                    </div>
+
+
+                    <div
+                        class="progress-track"
+                        role="progressbar"
+                        aria-label="Pastry collection preparation"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        aria-valuenow="75"
+                    >
+
+                        <div class="progress-value"></div>
+
+                    </div>
+
+
+                    <p id="pastry-status-message">
+                        Testing new flavours...
+                    </p>
+
+                </div>
+
+
+                <!-- Buttons -->
+                <div class="pastry-actions">
+
+                    <button
+                        class="pastry-preview-button"
+                        type="button"
+                        id="open-pastry-preview"
+                    >
+                        See What We’re Planning
+                    </button>
+
+
+                    <a
+                        class="pastry-whatsapp-button"
+                        href="https://wa.me/447123456789?text=Hello%20Sweet%20Moments%2C%20please%20let%20me%20know%20when%20your%20pastry%20collection%20is%20available."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Notify Me On WhatsApp
+                    </a>
+
+                </div>
+
+
+                <a
+                    class="return-to-cakes"
+                    href="cakes.html"
+                >
+                    View our available cakes instead
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PLANNED PASTRIES DIALOG
+        ========================== -->
+
+        <dialog
+            class="pastry-dialog"
+            id="pastry-dialog"
+        >
+
+            <button
+                class="dialog-close"
+                type="button"
+                id="close-pastry-preview"
+                aria-label="Close pastry preview"
+            >
+                ×
+            </button>
+
+
+            <div class="dialog-heading">
+
+                <p>Coming To Sweet Moments</p>
+
+                <h2>A Little Preview</h2>
+
+                <span>
+                    Our final selection may change while we
+                    perfect every recipe.
+                </span>
+
+            </div>
+
+
+            <div class="planned-pastries">
+
+                <article class="planned-pastry">
+
+                    <div
+                        class="planned-pastry-icon"
+                        aria-hidden="true"
+                    >
+                        🥐
+                    </div>
+
+                    <h3>Butter Pastries</h3>
+
+                    <p>
+                        Light, flaky and freshly prepared.
+                    </p>
+
+                </article>
+
+
+                <article class="planned-pastry">
+
+                    <div
+                        class="planned-pastry-icon"
+                        aria-hidden="true"
+                    >
+                        🌹
+                    </div>
+
+                    <h3>Persian Pastries</h3>
+
+                    <p>
+                        Traditional flavours with a modern finish.
+                    </p>
+
+                </article>
+
+
+                <article class="planned-pastry">
+
+                    <div
+                        class="planned-pastry-icon"
+                        aria-hidden="true"
+                    >
+                        🍫
+                    </div>
+
+                    <h3>Chocolate Treats</h3>
+
+                    <p>
+                        Rich handmade treats for chocolate lovers.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </dialog>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <h2>Sweet Moments</h2>
+
+                <p>
+                    Handmade cakes, pastries and desserts
+                    made with love.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="cakes.html">Cakes</a>
+                    </li>
+
+                    <li>
+                        <a href="pastries.html">Pastries</a>
+                    </li>
+
+                    <li>
+                        <a href="custom-cakes.html">
+                            Custom Cakes
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="booking.html">Booking</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>Contact Us</h3>
+
+                <p>Newcastle, England</p>
+
+                <p>Phone: 07123 456789</p>
+
+                <p>Email: hello@sweetmoments.co.uk</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; <span id="footer-year">2026</span>
+                Sweet Moments. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../JavaScript/script.js"></script>
+    <script src="../JavaScript/pastries.js"></script>
+
+</body>
+</html>
